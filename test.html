@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #game {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #game .item {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            background-size: 100% 100%;
+            /* 用JS控制坐标 */
+        }
+
+        #game .wall {
+            background-image: url("./img/wall.jpg");
+        }
+
+        #game .box {
+            background-image: url("./img/box.png");
+        }
+
+        #game .player {
+            background-image: url("./img/player.png");
+        }
+
+        /* 正确状态的箱子 */
+        #game .correct-box {
+            background-image: url("./img/over_box.png");
+        }
+
+        #game .correct {
+            border: 2px solid rgb(24, 151, 24);
+            /* 设置下面的属性之后，宽高影响的范围是边框盒 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game"></div>
+    <script src="./src/test.js"></script>
+    <script>
+        // var gameDom = document.getElementById('game');
+        // gameDom.style.height = 45 * colNumber + 'px';
+        // gameDom.style.width = 45 * Map.rowNumber + 'px';
+
+
+        // let Dom = document.createElement('div');
+        // Dom.className = 'item';
+        // Dom.style.top = 1* 45 + 'px';
+        // Dom.style.left = 1 * 45 + 'px';
+        // Dom.classList.add('player');
+        // gameDom.appendChild(Dom);
+
+        // content.forEach((row, i) => {
+        //     row.forEach((col, j) => {
+        //         // console.log(i,j);
+        //         let type = content[i][j];
+        //         console.log(type);
+        //         let Dom = document.createElement('div');
+        //         Dom.className = 'item';
+        //         Dom.style.top = i * 45 + 'px';
+        //         Dom.style.left = j * 45 + 'px';
+
+        //         switch (type) {
+        //             case PLAYER: Dom.classList.add('player'); break;
+        //             default: break;
+        //         }
+
+        //         gameDom.appendChild(Dom);
+        //     })
+        // })
+
+        var arr=[1,2,3,4,5,5,6]
+        arr.forEach(index=>{
+            
+        })
+
+    </script>
+</body>
+
+</html>
